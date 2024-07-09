@@ -1,0 +1,177 @@
+/* General styling for the user management container */
+.user-management {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-management h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styling for error messages */
+.error-message {
+  color: #d9534f;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  margin-left: 500px;
+  padding: 8px 40px 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  color: #888;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 35px;
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+/* Styling for the users table */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-photo {
+  width: 50px; /* Adjust according to your design */
+  height: 50px; /* Adjust according to your design */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image covers the entire space */
+  margin-right: 10px; /* Adds spacing between photo and text */
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.users-table th {
+  background-color: #f4f4f4;
+  color: #555;
+  font-weight: bold;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.users-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.users-table td {
+  color: #555;
+}
+
+/* Styling for the delete button */
+.users-table button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.users-table .togle-btn {
+  background-color: #54e7a3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  margin-left: 40px;
+}
+
+.users-table button:hover {
+  background-color: #c9302c;
+}
+
+/* Styling for the font awesome icon */
+
+.users-table .fa-trash-alt {
+  margin-right: 5px;
+}
+
+.confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-action-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.confirmation-modal h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: rgb(130, 224, 228);
+}
+
+.confirmation-modal p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.confirmation-modal .buttons {
+  text-align: center;
+}
+
+.confirmation-modal button {
+  margin: 0 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.confirmation-modal .confirm-button {
+  background-color: #d9534f;
+  color: white;
+}
+
+.confirmation-modal .cancel-button {
+  background-color: #aaa;
+  color: white;
+}

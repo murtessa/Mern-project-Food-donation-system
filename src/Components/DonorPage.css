@@ -1,0 +1,44 @@
+/* DonorPage.css */
+
+.donor-page-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.donor-info {
+  margin-bottom: 20px;
+}
+
+.donor-info p {
+  margin: 5px 0;
+}
+
+.donor-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.donate-button,
+.view-history-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.view-history-button {
+  background-color: #28a745;
+}
+
+/* Hover effect for buttons */
+.donate-button:hover,
+.view-history-button:hover {
+  opacity: 0.8;
+}

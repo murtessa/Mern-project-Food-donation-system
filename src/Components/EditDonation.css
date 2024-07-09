@@ -1,0 +1,67 @@
+/* EditDonation.css */
+
+.edit-donation-container {
+  max-width: 800px; /* Increased width for better layout */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type='text'],
+.form-group input[type='number'],
+.form-group input[type='file'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+}
+
+.image-preview {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Added margin for better spacing */
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

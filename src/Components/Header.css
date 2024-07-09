@@ -1,0 +1,154 @@
+/* Header.css */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(0, 27%, 96%);
+  color: #fff;
+  max-height: 13vh;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-button-btn {
+  margin-right: 10rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-photo {
+  width: 60px !important; /* Adjust the width to desired size */
+  height: 60px !important; /* Adjust the height to desired size */
+  border-radius: 50% !important; /* Makes the image round */
+  object-fit: cover !important; /* Ensures the image covers the entire area */
+  margin-right: 1rem !important;
+  margin-top: 4rem !important;
+}
+
+.profile-photo.placeholder {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 60px !important; /* Match the placeholder size with profile photo */
+  height: 60px !important; /* Match the placeholder size with profile photo */
+  border-radius: 50% !important;
+  background-color: #ccc !important;
+  color: #fff !important;
+  text-align: center !important;
+}
+
+.user-dropdown {
+  position: relative !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block !important;
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none !important;
+  position: absolute !important;
+  top: 70% !important; /* Adjust the position according to the size */
+  right: 0 !important;
+  background-color: #f9f9f9 !important;
+  min-width: 240px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  z-index: 1 !important;
+}
+
+.dropdown-content a,
+.dropdown-content button {
+  display: block !important;
+  padding: 0.5rem !important;
+  text-decoration: none !important;
+  color: #333 !important;
+}
+
+.icon {
+  margin-right: 8px !important;
+}
+
+.dropdown-content a:hover,
+.dropdown-content button:hover {
+  background-color: #ddd !important;
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0.5rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .header-button-btn {
+    margin-right: 1rem; /* Adjust for smaller screens */
+  }
+}
+
+/* Responsive styling for phones */
+@media (max-width: 576px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .header-buttons {
+    margin-top: 0.5rem;
+  }
+
+  .header-button,
+  .header-button-btn {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .user-dropdown {
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-content {
+    top: 100%; /* Adjusted for smaller screens */
+    right: 1rem;
+    min-width: 200px;
+  }
+}

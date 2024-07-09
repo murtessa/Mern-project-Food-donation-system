@@ -1,0 +1,59 @@
+.message-modal {
+  display: block; /* Ensure modal is displayed */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners for modern look */
+}
+
+.modal-content {
+  display: block; /* Ensure content is displayed */
+  max-width: 500px;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold; /* Improve readability */
+  color: #333; /* Slightly darker color for better contrast */
+}
+
+.clear-icon {
+  position: absolute;
+  top: 10px; /* Adjusted for better alignment */
+  right: 10px;
+  cursor: pointer;
+  color: #888; /* Initial color */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.clear-icon:hover {
+  color: #f00; /* Red color on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.messages-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px; /* Space for scrollbar */
+}
+
+.message-item {
+  display: block; /* Ensure message items are displayed */
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9; /* Light background for messages */
+  margin-bottom: 5px; /* Space between messages */
+  border-radius: 4px; /* Rounded corners for modern look */
+}
+
+.content {
+  color: #333; /* Improved readability */
+}

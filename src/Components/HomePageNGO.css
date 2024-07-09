@@ -1,0 +1,111 @@
+.ngo-home-container {
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 70%; /* Adjusted width */
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 2.5rem;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #0056b3;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  color: #dc3545;
+  transition: color 0.3s ease;
+}
+
+.clear-icon:hover {
+  color: #c82333;
+}
+
+.available-donation {
+  color: #378de9;
+}
+
+.donation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.donation-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.food-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.status {
+  color: #e258cb;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.no-result {
+  color: #e48bd5;
+  text-align: center;
+}

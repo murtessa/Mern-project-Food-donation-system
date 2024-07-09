@@ -1,0 +1,171 @@
+/* DonationHistory.css */
+
+.donation-history-container {
+  padding: 1rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 70%; /* Adjusted width */
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 2.5rem;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #0056b3;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  color: #dc3545;
+  transition: color 0.3s ease;
+}
+
+.clear-icon:hover {
+  color: #c82333;
+}
+
+.donation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.donation-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 300px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.status {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.card-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+.edit-icon {
+  color: #007bff;
+}
+
+.delete-icon {
+  color: #dc3545;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px; /* Adjust the width of the modal */
+  max-width: 90%;
+}
+
+.modal-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.search-message {
+  text-align: center;
+  margin-top: 1rem;
+  color: #dc3545; /* Adjust the color as needed */
+  font-weight: bold;
+}

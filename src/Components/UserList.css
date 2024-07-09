@@ -1,0 +1,36 @@
+/* UserList.css */
+
+.user-list-container {
+  margin: 20px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+}
+
+.user-photo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.user-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+/* Add more styles as needed */

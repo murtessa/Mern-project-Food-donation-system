@@ -1,0 +1,79 @@
+.dashboard-stats {
+  padding: 20px;
+}
+
+.dashboard-stats h2 {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2196f3;
+}
+
+.stat-card p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.stat-card .total-users {
+  color: #4caf50; /* Green */
+}
+
+.stat-card .total-donations {
+  color: #ff9800; /* Orange */
+}
+
+.stat-card .total-donors {
+  color: #2196f3; /* Blue */
+}
+
+.stat-card .total-ngos {
+  color: #9c27b0; /* Purple */
+}
+
+.stat-card .total-deliveries {
+  color: #ff5722; /* Deep Orange */
+}
+
+.stat-card .pending-donations {
+  color: #f44336; /* Red */
+}
+
+.stat-card .requested-donations {
+  color: #00bcd4; /* Cyan */
+}
+
+.stat-card .approved-donations {
+  color: #8bc34a; /* Light Green */
+}
